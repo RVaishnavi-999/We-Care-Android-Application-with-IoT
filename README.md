@@ -2,9 +2,9 @@
  Android Application combined with Internet Of Things
 
 ## Objective/Vision:
-** * This application is developed to provide "smart" and better access to health care management.
+   * This application is developed to provide "smart" and better access to health care management.
    * This app facilitates doctors and nurses in smartly monitoring and managing their patients.
-   * With this, management of Main Doctors, Duty doctors, Nurses and Patients in a Hospital is made easier :) **
+   * With this, management of Main Doctors, Duty doctors, Nurses and Patients in a Hospital is made easier :) 
    
 This application provides the following services / Fuctionalities:
 * Admin registers and views all the doctors, Nurses and Patients in the Hospital.
