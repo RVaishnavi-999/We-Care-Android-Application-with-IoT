@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:background="@color/zxing_transparent"
+    android:layout_height="wrap_content">
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardElevation="12dp"
+        app:cardCornerRadius="12dp"
+        android:layout_margin="16dp"
+        >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:padding="2dp"
+        >
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/set_imageUrl"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@mipmap/ic_launcher_round"
+            app:civ_border_color="@color/black"
+            app:civ_border_width="2dp" />
+
+            <!-- full name -->
+        <TextView
+            android:id="@+id/tv_name_heading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@+id/set_imageUrl"
+            android:text="Name : "
+            android:textColor="@color/teal_700"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/set_name"
+                android:layout_toRightOf="@+id/tv_name_heading"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="3dp"
+                android:layout_marginTop="10dp"
+                android:text=" "
+                android:textColor="@color/black"
+                android:textSize="18dp"
+                tools:ignore="SpeakableTextPresentCheck" />
+
+
+                <!--User ID -->
+        <TextView
+            android:id="@+id/tv_userid_heading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_name_heading"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@id/set_imageUrl"
+            android:text="User ID : "
+            android:textColor="@color/teal_700"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/set_uid"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@id/tv_userid_heading"
+                        android:layout_below="@id/set_name"
+                        android:layout_marginLeft="3dp"
+                        android:text=" "
+                        android:textColor="@color/black"
+                        android:textSize="18dp"
+                        tools:ignore="SpeakableTextPresentCheck" />
+
+        <!--service years -->
+        <LinearLayout
+            android:id="@+id/ser_year"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="3dp"
+            android:layout_toRightOf="@+id/set_imageUrl"
+            android:layout_below="@id/tv_userid_heading"
+            android:layout_gravity="center_vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Service Years : "
+                android:textSize="18dp"
+                android:layout_marginLeft="3dp"
+                android:textColor="@color/teal_700"
+                android:textStyle="bold"
+                />
+
+            <TextView
+                android:id="@+id/set_ser_years"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text=" "
+                android:textColor="@color/black"
+                android:textSize="18dp"
+                tools:ignore="SpeakableTextPresentCheck" />
+        </LinearLayout>
+
+        <!--speciality -->
+        <TextView
+            android:id="@+id/tv_spl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/set_imageUrl"
+            android:layout_marginTop="5dp"
+            android:text="Speciality : "
+            android:textColor="@color/teal_700"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/set_spl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="3dp"
+            android:layout_toRightOf="@id/tv_spl"
+            android:layout_below="@id/set_imageUrl"
+            android:text=" "
+            android:textColor="#F87212"
+            android:textSize="18dp"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <!--designation -->
+        <LinearLayout
+            android:id="@+id/tv_desig"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@+id/tv_spl"
+            android:layout_gravity="center_vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Designation : "
+                android:textSize="18dp"
+                android:textColor="@color/teal_700"
+                android:textStyle="bold"
+                />
+
+            <TextView
+                android:id="@+id/set_desig"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" "
+                android:textColor="@color/black"
+                android:textSize="18dp"
+                tools:ignore="SpeakableTextPresentCheck" />
+
+        </LinearLayout>
+
+
+        <!--contact no -->
+        <LinearLayout
+            android:id="@+id/phone_heading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@id/tv_desig">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Phone : "
+                android:textSize="18dp"
+                android:textColor="@color/teal_700"
+                android:textStyle="bold"
+                />
+
+            <TextView
+                android:id="@+id/set_phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" "
+                android:textColor="@color/black"
+                android:textSize="18dp"
+                tools:ignore="SpeakableTextPresentCheck" />
+        </LinearLayout>
+
+
+
+        <!--email -->
+        <LinearLayout
+            android:id="@+id/heading_email"
+            android:layout_below="@+id/phone_heading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center_vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="E-mail : "
+                android:textSize="18dp"
+                android:textColor="@color/teal_700"
+                android:textStyle="bold"
+                />
+
+            <TextView
+                android:id="@+id/set_mail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" "
+                android:textColor="@color/black"
+                android:textSize="18dp"
+                tools:ignore="SpeakableTextPresentCheck" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
+</ScrollView>

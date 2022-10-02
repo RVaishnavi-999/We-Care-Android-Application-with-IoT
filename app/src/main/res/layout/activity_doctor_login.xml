@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_gravity="center_horizontal"
+    android:background="@drawable/nurse_gradient"
+    tools:context=".DoctorLogin">
+
+    <ImageView
+        android:src="@drawable/drlogin"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="350dp"
+        android:layout_height="280dp"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:text="Welcome"
+        android:textColor="#0d6e6a"
+        android:textSize="45dp"
+        android:textStyle="bold"
+        android:letterSpacing="0.05"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:text="Please Login Here"
+        android:textColor="#0d6e6a"
+        android:textStyle="bold"
+        android:textSize="18dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:letterSpacing="0.07"
+        android:paddingLeft="40dp"
+        android:text="Enter Email Address"
+        android:textColor="#0d6e6a"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        />
+
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="350dp"
+        android:layout_height="48dp"
+        android:layout_gravity="center_horizontal"
+        android:drawableStart="@drawable/ic_usericon"
+        android:hint=" email@gmail.com "
+        android:inputType="textEmailAddress"
+        android:paddingLeft="10dp"
+        android:textColor="#000"
+        android:background="@drawable/edittext_design"/>
+
+    <TextView
+        android:text="Enter Password"
+        android:letterSpacing="0.07"
+        android:paddingLeft="40dp"
+        android:textColor="#0d6e6a"
+        android:textStyle="bold"
+        android:textSize="18dp"
+        android:layout_marginTop="12dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <ImageView
+        android:id="@+id/imgview_show_hide_pwd"
+        android:layout_width="30dp"
+        android:layout_height="32dp"
+        android:layout_marginLeft="40dp"/>
+
+    <EditText
+        android:id="@+id/pwd"
+        android:hint=" Password"
+        android:drawableStart="@drawable/ic_key"
+        android:inputType="textPassword"
+        android:textColor="#000"
+        android:paddingLeft="10dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="350dp"
+        android:layout_height="48dp"
+        android:background="@drawable/edittext_design"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/login_btn"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/button_shape"
+        android:letterSpacing="0.05"
+        android:text="Login"
+        android:textColor="#fff"
+        android:textSize="19dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/forgot_pwd_click_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:letterSpacing="0.07"
+        android:text="Forgot Password ?"
+        android:textColor="#000"
+        android:textSize="18dp"
+        android:textStyle="italic"
+        android:layout_marginLeft="120dp"
+        />
+
+    <ProgressBar
+        android:id="@+id/progressbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_gravity="center"
+        android:visibility="gone"
+        />
+
+
+</LinearLayout>

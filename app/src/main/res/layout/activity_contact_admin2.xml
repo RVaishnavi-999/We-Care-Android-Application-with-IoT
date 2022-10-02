@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".C_DrContactAdmin">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/light_bg"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:src="@drawable/bg" />
+
+        <TextView
+            android:id="@+id/tv_contact_admin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:letterSpacing="0.08"
+            android:text=": Contact Admin :"
+            android:textAlignment="center"
+            android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="9dp"
+            android:padding="25dp"
+            android:text="To change 'Speciality / Designation fields / For any queries ...'"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="italic" />
+
+        <com.chinodev.androidneomorphframelayout.NeomorphFrameLayout
+            android:layout_width="400dp"
+            android:layout_height="140dp"
+            android:layout_gravity="center"
+            app:neomorph_background_color="#88EDF8"
+            app:neomorph_corner_radius="10dp"
+            app:neomorph_elevation="10dp"
+            app:neomorph_highlight_color="@color/highlight"
+            app:neomorph_shadow_color="#6C8DC2"
+            app:neomorph_shadow_type="outer"
+            app:neomorph_view_type="circular">
+
+            <ImageView
+                android:id="@+id/callAdmin_imgView"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="18sp"
+                android:src="@drawable/call" />
+        </com.chinodev.androidneomorphframelayout.NeomorphFrameLayout>
+
+        <com.chinodev.androidneomorphframelayout.NeomorphFrameLayout
+            android:layout_width="150dp"
+            android:layout_height="80dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            app:neomorph_background_color="#88EDF8"
+            app:neomorph_corner_radius="10dp"
+            app:neomorph_elevation="10dp"
+            app:neomorph_highlight_color="@color/highlight"
+            app:neomorph_shadow_color="#6C8DC2"
+            app:neomorph_shadow_type="outer"
+            app:neomorph_view_type="circular">
+
+            <ImageView
+                android:id="@+id/back_iv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:src="@drawable/arrow"
+                android:tooltipText="BACK TO HOMEPAGE" />
+        </com.chinodev.androidneomorphframelayout.NeomorphFrameLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

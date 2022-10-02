@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/home_pg_gradient"
+    tools:context=".view_dr">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:ignore="ScrollViewSize"
+        >
+        <ImageView
+            android:id="@+id/heading"
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:src="@drawable/bg"/>
+
+        <!--  Doctors-->
+        <TextView
+            android:id="@+id/tv1"
+            android:text="Doctors "
+            android:textSize="23sp"
+            android:textColor="#fff"
+            android:letterSpacing="0.08"
+            android:textStyle="bold"
+            android:fontFamily="sans-serif-medium"
+            android:paddingTop="2dp"
+            android:paddingLeft="10dp"
+            android:background="@color/teal_700"
+            android:layout_marginTop="15dp"
+            android:gravity="center_horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="38dp"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp" />
+
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/vkeku/Downloads/ProjectWecare/ProjectWecare/app/src/main/res/drawable-v24/home_pg_gradient2.xml" value="0.1625" />
+        <entry key="..\:/Users/vkeku/Downloads/ProjectWecare/ProjectWecare/app/src/main/res/layout/activity_add_dr.xml" value="0.215625" />
+        <entry key="..\:/Users/vkeku/Downloads/ProjectWecare/ProjectWecare/app/src/main/res/layout/activity_add_nurse.xml" value="0.215625" />
+        <entry key="..\:/Users/vkeku/Downloads/ProjectWecare/ProjectWecare/app/src/main/res/layout/activity_add_patient1.xml" value="0.215625" />
+        <entry key="..\:/Users/vkeku/Downloads/ProjectWecare/ProjectWecare/app/src/main/res/layout/activity_add_patient2.xml" value="0.215625" />
+        <entry key="..\:/Users/vkeku/Downloads/r project/ProjectWecare/ProjectWecare/app/src/main/res/drawable-v24/home_pg_gradient.xml" value="0.1625" />
+        <entry key="..\:/Users/vkeku/Downloads/r project/ProjectWecare/ProjectWecare/app/src/main/res/drawable/background_icon.xml" value="0.1" />
+        <entry key="..\:/Users/vkeku/Downloads/r project/ProjectWecare/ProjectWecare/app/src/main/res/drawable/button_success_bg.xml" value="0.1625" />
+        <entry key="..\:/Users/vkeku/Downloads/r project/ProjectWecare/ProjectWecare/app/src/main/res/drawable/light_bg.xml" value="0.1625" />
+        <entry key="..\:/Users/vkeku/Downloads/r project/ProjectWecare/ProjectWecare/app/src/main/res/drawable/title_success_bg.xml" value="0.1625" />
+        <entry key="..\:/Users/vkeku/Downloads/r project/ProjectWecare/ProjectWecare/app/src/main/res/layout/activity_add_dr.xml" value="0.215625" />
+        <entry key="..\:/Users/vkeku/Downloads/r project/ProjectWecare/ProjectWecare/app/src/main/res/layout/activity_add_nurse.xml" value="0.215625" />
+        <entry key="..\:/Users/vkeku/Downloads/r project/ProjectWecare/ProjectWecare/app/src/main/res/layout/activity_add_patient1.xml" value="0.215625" />
+        <entry key="..\:/Users/vkeku/Downloads/r project/ProjectWecare/ProjectWecare/app/src/main/res/layout/activity_add_patient2.xml" value="0.215625" />
+        <entry key="..\:/Users/vkeku/Downloads/r project/ProjectWecare/ProjectWecare/app/src/main/res/layout/activity_add_patient3.xml" value="0.215625" />
+        <entry key="..\:/Users/vkeku/Downloads/r project/ProjectWecare/ProjectWecare/app/src/main/res/layout/activity_admin.xml" value="0.215625" />
+        <entry key="..\:/Users/vkeku/Downloads/r project/ProjectWecare/ProjectWecare/app/src/main/res/layout/activity_admin_edit_profile.xml" value="0.215625" />
+        <entry key="..\:/Users/vkeku/Downloads/r project/ProjectWecare/ProjectWecare/app/src/main/res/layout/activity_adminlogin.xml" value="0.215625" />
+        <entry key="..\:/Users/vkeku/Downloads/r project/ProjectWecare/ProjectWecare/app/src/main/res/layout/activity_attendance.xml" value="0.215625" />
+        <entry key="..\:/Users/vkeku/Downloads/r project/ProjectWecare/ProjectWecare/app/src/main/res/layout/activity_attenddoctor.xml" value="0.215625" />
+        <entry key="..\:/Users/vkeku/Downloads/r project/ProjectWecare/ProjectWecare/app/src/main/res/layout/activity_attendnurse.xml" value="0.215625" />
+        <entry key="..\:/Users/vkeku/Downloads/r project/ProjectWecare/ProjectWecare/app/src/main/res/layout/activity_attendpatientview.xml" value="0.215625" />
+        <entry key="..\:/Users/vkeku/Downloads/r project/ProjectWecare/ProjectWecare/app/src/main/res/layout/activity_bill_generate.xml" value="0.215625" />
+        <entry key="..\:/Users/vkeku/Downloads/r project/ProjectWecare/ProjectWecare/app/src/main/res/layout/activity_cdr_contact_admin.xml" value="0.215625" />
+        <entry key="..\:/Users/vkeku/Downloads/r project/ProjectWecare/ProjectWecare/app/src/main/res/layout/activity_cdr_edit_profile.xml" value="0.215625" />
+        <entry key="..\:/Users/vkeku/Downloads/r project/ProjectWecare/ProjectWecare/app/src/main/res/layout/activity_cdr_patients_list.xml" value="0.215625" />
+        <entry key="..\:/Users/vkeku/Downloads/r project/ProjectWecare/ProjectWecare/app/src/main/res/layout/activity_chat.xml" value="0.215625" />
+        <entry key="..\:/Users/vkeku/Downloads/r project/ProjectWecare/ProjectWecare/app/src/main/res/layout/activity_chat_dr.xml" value="0.215625" />
+        <entry key="..\:/Users/vkeku/Downloads/r project/ProjectWecare/ProjectWecare/app/src/main/res/layout/activity_chat_jnr_dr.xml" value="0.215625" />
+        <entry key="..\:/Users/vkeku/Downloads/r project/ProjectWecare/ProjectWecare/app/src/main/res/layout/activity_contact_admin2.xml" value="0.215625" />
+        <entry key="..\:/Users/vkeku/Downloads/r project/ProjectWecare/ProjectWecare/app/src/main/res/layout/activity_discharge_bill.xml" value="0.215625" />
+        <entry key="..\:/Users/vkeku/Downloads/r project/ProjectWecare/ProjectWecare/app/src/main/res/layout/activity_discharge_summary.xml" value="0.215625" />
+        <entry key="..\:/Users/vkeku/Downloads/r project/ProjectWecare/ProjectWecare/app/src/main/res/layout/activity_doctor_login.xml" value="0.215625" />
+        <entry key="..\:/Users/vkeku/Downloads/r project/ProjectWecare/ProjectWecare/app/src/main/res/layout/activity_edit_patient.xml" value="0.215625" />
+        <entry key="..\:/Users/vkeku/Downloads/r project/ProjectWecare/ProjectWecare/app/src/main/res/layout/activity_edit_profile.xml" value="0.215625" />
+        <entry key="..\:/Users/vkeku/Downloads/r project/ProjectWecare/ProjectWecare/app/src/main/res/layout/activity_edit_profile2.xml" value="0.215625" />
+        <entry key="..\:/Users/vkeku/Downloads/r project/ProjectWecare/ProjectWecare/app/src/main/res/layout/activity_edit_shift.xml" value="0.215625" />
+        <entry key="..\:/Users/vkeku/Downloads/r project/ProjectWecare/ProjectWecare/app/src/main/res/layout/activity_forget.xml" value="0.215625" />
+        <entry key="..\:/Users/vkeku/Downloads/r project/ProjectWecare/ProjectWecare/app/src/main/res/layout/activity_forgot_pwd.xml" value="0.215625" />
+        <entry key="..\:/Users/vkeku/Downloads/r project/ProjectWecare/ProjectWecare/app/src/main/res/layout/activity_forgot_pwd2.xml" value="0.215625" />
+        <entry key="..\:/Users/vkeku/Downloads/r project/ProjectWecare/ProjectWecare/app/src/main/res/layout/activity_forgot_pwdnurse.xml" value="0.215625" />
+        <entry key="..\:/Users/vkeku/Downloads/r project/ProjectWecare/ProjectWecare/app/src/main/res/layout/activity_gen_phy_dr_homepg.xml" value="0.215625" />
+        <entry key="..\:/Users/vkeku/Downloads/r project/ProjectWecare/ProjectWecare/app/src/main/res/layout/activity_home.xml" value="0.215625" />
+        <entry key="..\:/Users/vkeku/Downloads/r project/ProjectWecare/ProjectWecare/app/src/main/res/layout/activity_main.xml" value="0.215625" />
+        <entry key="..\:/Users/vkeku/Downloads/r project/ProjectWecare/ProjectWecare/app/src/main/res/layout/activity_main2nurse.xml" value="0.215625" />
+        <entry key="..\:/Users/vkeku/Downloads/r project/ProjectWecare/ProjectWecare/app/src/main/res/layout/activity_main3nurse.xml" value="0.215625" />
+        <entry key="..\:/Users/vkeku/Downloads/r project/ProjectWecare/ProjectWecare/app/src/main/res/layout/activity_mainnurse.xml" value="0.215625" />
+        <entry key="..\:/Users/vkeku/Downloads/r project/ProjectWecare/ProjectWecare/app/src/main/res/layout/activity_manual_attendance.xml" value="0.215625" />
+        <entry key="..\:/Users/vkeku/Downloads/r project/ProjectWecare/ProjectWecare/app/src/main/res/layout/activity_nurse_login.xml" value="0.215625" />
+        <entry key="..\:/Users/vkeku/Downloads/r project/ProjectWecare/ProjectWecare/app/src/main/res/layout/activity_patient_home_pg.xml" value="0.215625" />
+        <entry key="..\:/Users/vkeku/Downloads/r project/ProjectWecare/ProjectWecare/app/src/main/res/layout/activity_patient_iot_view.xml" value="0.215625" />
+        <entry key="..\:/Users/vkeku/Downloads/r project/ProjectWecare/ProjectWecare/app/src/main/res/layout/activity_patient_login.xml" value="0.215625" />
+        <entry key="..\:/Users/vkeku/Downloads/r project/ProjectWecare/ProjectWecare/app/src/main/res/layout/activity_popup_window_dr.xml" value="0.215625" />
+        <entry key="..\:/Users/vkeku/Downloads/r project/ProjectWecare/ProjectWecare/app/src/main/res/layout/activity_popup_window_nurse.xml" value="0.215625" />
+        <entry key="..\:/Users/vkeku/Downloads/r project/ProjectWecare/ProjectWecare/app/src/main/res/layout/activity_popup_window_patient.xml" value="0.215625" />
+        <entry key="..\:/Users/vkeku/Downloads/r project/ProjectWecare/ProjectWecare/app/src/main/res/layout/activity_shiftdateshow.xml" value="0.215625" />
+        <entry key="..\:/Users/vkeku/Downloads/r project/ProjectWecare/ProjectWecare/app/src/main/res/layout/activity_swapnurseshift.xml" value="0.215625" />
+        <entry key="..\:/Users/vkeku/Downloads/r project/ProjectWecare/ProjectWecare/app/src/main/res/layout/activity_swapshift.xml" value="0.215625" />
+        <entry key="..\:/Users/vkeku/Downloads/r project/ProjectWecare/ProjectWecare/app/src/main/res/layout/activity_timetable.xml" value="0.215625" />
+        <entry key="..\:/Users/vkeku/Downloads/r project/ProjectWecare/ProjectWecare/app/src/main/res/layout/activity_update_email.xml" value="0.215625" />
+        <entry key="..\:/Users/vkeku/Downloads/r project/ProjectWecare/ProjectWecare/app/src/main/res/layout/activity_update_email2.xml" value="0.215625" />
+        <entry key="..\:/Users/vkeku/Downloads/r project/ProjectWecare/ProjectWecare/app/src/main/res/layout/activity_user.xml" value="0.215625" />
+        <entry key="..\:/Users/vkeku/Downloads/r project/ProjectWecare/ProjectWecare/app/src/main/res/layout/activity_user1.xml" value="0.215625" />
+        <entry key="..\:/Users/vkeku/Downloads/r project/ProjectWecare/ProjectWecare/app/src/main/res/layout/activity_user2.xml" value="0.215625" />
+        <entry key="..\:/Users/vkeku/Downloads/r project/ProjectWecare/ProjectWecare/app/src/main/res/layout/activity_verify_otp.xml" value="0.215625" />
+        <entry key="..\:/Users/vkeku/Downloads/r project/ProjectWecare/ProjectWecare/app/src/main/res/layout/activity_view_dr.xml" value="0.215625" />
+        <entry key="..\:/Users/vkeku/Downloads/r project/ProjectWecare/ProjectWecare/app/src/main/res/layout/activity_view_nurse.xml" value="0.215625" />
+        <entry key="..\:/Users/vkeku/Downloads/r project/ProjectWecare/ProjectWecare/app/src/main/res/layout/activity_view_patient.xml" value="0.215625" />
+        <entry key="..\:/Users/vkeku/Downloads/r project/ProjectWecare/ProjectWecare/app/src/main/res/layout/activity_view_shift.xml" value="0.215625" />
+        <entry key="..\:/Users/vkeku/Downloads/r project/ProjectWecare/ProjectWecare/app/src/main/res/layout/alldrentry_recyclerview.xml" value="0.215625" />
+        <entry key="..\:/Users/vkeku/Downloads/r project/ProjectWecare/ProjectWecare/app/src/main/res/layout/allnurseentry_recyclerview.xml" value="0.215625" />
+        <entry key="..\:/Users/vkeku/Downloads/r project/ProjectWecare/ProjectWecare/app/src/main/res/layout/allpatientlist_recyclerview.xml" value="0.215625" />
+        <entry key="..\:/Users/vkeku/Downloads/r project/ProjectWecare/ProjectWecare/app/src/main/res/layout/allpatientlist_recyclerview1.xml" value="0.215625" />
+        <entry key="..\:/Users/vkeku/Downloads/r project/ProjectWecare/ProjectWecare/app/src/main/res/layout/allviewpatient_recyclerview.xml" value="0.215625" />
+        <entry key="..\:/Users/vkeku/Downloads/r project/ProjectWecare/ProjectWecare/app/src/main/res/layout/attendview.xml" value="0.215625" />
+        <entry key="..\:/Users/vkeku/Downloads/r project/ProjectWecare/ProjectWecare/app/src/main/res/layout/attendview1.xml" value="0.215625" />
+        <entry key="..\:/Users/vkeku/Downloads/r project/ProjectWecare/ProjectWecare/app/src/main/res/layout/customdialogbox.xml" value="0.215625" />
+        <entry key="..\:/Users/vkeku/Downloads/r project/ProjectWecare/ProjectWecare/app/src/main/res/layout/customdialognurse.xml" value="0.215625" />
+        <entry key="..\:/Users/vkeku/Downloads/r project/ProjectWecare/ProjectWecare/app/src/main/res/layout/drop_down_list.xml" value="0.215625" />
+        <entry key="..\:/Users/vkeku/Downloads/r project/ProjectWecare/ProjectWecare/app/src/main/res/layout/item.xml" value="0.215625" />
+        <entry key="..\:/Users/vkeku/Downloads/r project/ProjectWecare/ProjectWecare/app/src/main/res/layout/item_container_recent_conversation.xml" value="0.215625" />
+        <entry key="..\:/Users/vkeku/Downloads/r project/ProjectWecare/ProjectWecare/app/src/main/res/layout/item_container_recieve_message.xml" value="0.215625" />
+        <entry key="..\:/Users/vkeku/Downloads/r project/ProjectWecare/ProjectWecare/app/src/main/res/layout/item_container_sent_messages.xml" value="0.215625" />
+        <entry key="..\:/Users/vkeku/Downloads/r project/ProjectWecare/ProjectWecare/app/src/main/res/layout/item_container_user.xml" value="0.215625" />
+        <entry key="..\:/Users/vkeku/Downloads/r project/ProjectWecare/ProjectWecare/app/src/main/res/layout/layout_error_dialog.xml" value="0.215625" />
+        <entry key="..\:/Users/vkeku/Downloads/r project/ProjectWecare/ProjectWecare/app/src/main/res/layout/layout_success_dialog.xml" value="0.215625" />
+        <entry key="..\:/Users/vkeku/Downloads/r project/ProjectWecare/ProjectWecare/app/src/main/res/layout/layout_viewshift.xml" value="0.215625" />
+        <entry key="..\:/Users/vkeku/Downloads/r project/ProjectWecare/ProjectWecare/app/src/main/res/layout/main_nav_drawer.xml" value="0.215625" />
+        <entry key="..\:/Users/vkeku/Downloads/r project/ProjectWecare/ProjectWecare/app/src/main/res/layout/main_nav_drawer2.xml" value="0.215625" />
+        <entry key="..\:/Users/vkeku/Downloads/r project/ProjectWecare/ProjectWecare/app/src/main/res/layout/main_nav_drawer_p.xml" value="0.215625" />
+        <entry key="..\:/Users/vkeku/Downloads/r project/ProjectWecare/ProjectWecare/app/src/main/res/layout/main_toolbar.xml" value="0.215625" />
+        <entry key="..\:/Users/vkeku/Downloads/r project/ProjectWecare/ProjectWecare/app/src/main/res/layout/main_toolbar2.xml" value="0.215625" />
+        <entry key="..\:/Users/vkeku/Downloads/r project/ProjectWecare/ProjectWecare/app/src/main/res/layout/main_toolbarp.xml" value="0.215625" />
+        <entry key="..\:/Users/vkeku/Downloads/r project/ProjectWecare/ProjectWecare/app/src/main/res/layout/patientbillview.xml" value="0.215625" />
+        <entry key="..\:/Users/vkeku/Downloads/r project/ProjectWecare/ProjectWecare/app/src/main/res/layout/shiftitem.xml" value="0.215625" />
+        <entry key="..\:/Users/vkeku/Downloads/r project/ProjectWecare/ProjectWecare/app/src/main/res/layout/slide_item_container.xml" value="0.215625" />
+        <entry key="..\:/Users/vkeku/Downloads/r project/ProjectWecare/ProjectWecare/app/src/main/res/layout/viewshiftitem.xml" value="0.215625" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

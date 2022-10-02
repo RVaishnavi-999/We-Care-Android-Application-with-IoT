@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">We Care</string>
+    <string name="todo">TODO</string>
+    <string name="welcome_back">Welcome Back</string>
+    <string name="sign_in_to_continue">Sign-In to continue</string>
+    <string name="e_mail">E-Mail</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="change_password">Change Password</string>
+    <string name="enter_registered_e_mail">Enter Registered E-mail</string>
+    <string name="reset_password">Reset Password</string>
+    <string name="home">Home</string>
+    <string name="view">View</string>
+    <string name="user_profile">User Profile</string>
+    <string name="admin">Admin</string>
+    <string name="patient">Patient</string>
+    <string name="doctor">Doctor</string>
+    <string name="nurse">Nurse</string>
+    <string name="attendance">Attendance</string>
+    <string name="invoice">invoice</string>
+    <string name="time_table">Time-Table</string>
+    <string name="first_name">First Name</string>
+    <string name="test">Test</string>
+    <string name="last_name">Last Name</string>
+    <string name="phone">Phone</string>
+    <string name="edit_profile">Edit Profile</string>
+    <string name="logout">Logout</string>
+    <string name="_0ut_time">0UT-TIME</string>
+    <string name="in_time">IN-TIME</string>
+</resources>

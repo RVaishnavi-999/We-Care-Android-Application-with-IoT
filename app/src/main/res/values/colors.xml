@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="ten">#FF018786</color>
+
+    <color name="bluedark">#2f333f</color>
+    <color name="darkaqua">#04E4D9</color>
+    <color name="aqua">#9AE5E8</color>
+
+    <color name="light_gray">#B5B8B8</color>
+    <color name="dark_green">#049640</color>
+    <!-- soft UI colors used-->
+    <color name="background">#D4D6D9</color>
+    <color name="highlight">#FFFFFF</color>
+
+    <!-- r colors -->
+    <color name="primary">#F1F4F6</color>
+    <color name="primary_dark">#EFF2F4</color>
+    <color name="primary_text">#212121</color>
+    <color name="secondary_text">#5E5E5E</color>
+    <color name="input_background">#ECECEC</color>
+    <color name="icon_background">#20FFFFFF</color>
+    <color name="error">#FA5454</color>
+    <color name="received_msg_background">#69A6BD</color>
+    <color name="send_msg_background">#A8AEAB</color>
+
+
+    <color name="one">#E5E5EF</color>
+    <color name="two">#CCE5ED</color>
+    <color name="three">#BCE3F3</color>
+    <color name="six">#69A6BD</color>
+    <color name="seven">#459EC1</color>
+    <color name="eight">#329FCA</color>
+    <color name="nine">#FF2497C4</color>
+    <color name="hot_pink">#FF03DAC5</color>
+    <color name="gray">#253A4B</color>
+    <color name="red">#F86767</color>
+    <color name="icon_orange">#FF7F2A</color>
+    <color name="icon_orange2">#80FF7F2A</color>
+
+    <color name="darkblue">#3B79E4</color>
+    <color name="blue">#69C7ED</color>
+    <color name="darkred">#FA3535</color>
+
+</resources>

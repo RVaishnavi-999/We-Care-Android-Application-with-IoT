@@ -1,0 +1,326 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:ignore="ScrollViewSize"
+        android:background="@color/white"
+        >
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:src="@drawable/bg"/>
+
+        <TextView
+            android:text="Doctor Registration Form"
+            android:textColor="#0d6e6a"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:fontFamily="sans-serif-medium"
+            android:letterSpacing="0.05"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="wrap_content"
+            android:shadowColor="#000"
+            android:layout_marginTop="10dp"
+            android:layout_height="wrap_content"/>
+
+        <LinearLayout
+            android:id="@+id/img_profile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center"
+            android:orientation="vertical">
+
+
+            <ImageView
+                android:id="@+id/profilepic"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                app:srcCompat="@drawable/best_dr" />
+
+        </LinearLayout>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="15dp"
+            android:textColorHint="#000"
+            app:boxStrokeColor="#000"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+            >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/fullname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/ic_pencil"
+                android:hint=" Full Name"
+                android:inputType="text"
+                android:padding="10dp"
+                android:textColor="#000"
+                android:textColorHint="#757575"
+                android:textSize="18sp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/home_pg_gradient"
+                tools:ignore="TouchTargetSizeCheck" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            android:text=" Speciality"
+            android:drawableStart="@drawable/ic_spl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:letterSpacing="0.07"
+            android:layout_marginLeft="24dp"
+            android:layout_marginRight="15dp"
+            android:textColor="#000"
+            android:textSize="18sp"
+            android:textStyle="normal"
+            tools:ignore="HardcodedText" />
+
+        <Spinner
+            android:id="@+id/spl"
+            android:contentDescription=" Select speciality"
+            android:background="@drawable/home_pg_gradient"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginLeft="9dp"
+            android:layout_marginTop="3dp"
+            android:layout_marginRight="9dp"
+            android:paddingLeft="10dp"
+            android:spinnerMode="dialog"
+            tools:ignore="HardcodedText" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="20dp"
+            android:textColorHint="#000"
+            app:boxStrokeColor="#000"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+            >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/service"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/ic_pencil"
+                android:hint=" Service Years"
+                android:maxLength="2"
+                android:inputType="number"
+                android:padding="10dp"
+                android:textColor="#000"
+                android:textColorHint="#757575"
+                android:textSize="18sp"
+                android:background="@drawable/home_pg_gradient"
+                tools:ignore="TouchTargetSizeCheck" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:letterSpacing="0.07"
+            android:layout_marginLeft="24dp"
+            android:layout_marginRight="15dp"
+            android:text=" Designation"
+            android:drawableStart="@drawable/ic_usericon"
+            android:textColor="#000"
+            android:textSize="18sp"
+            android:textStyle="normal" />
+
+        <Spinner
+            android:id="@+id/designation"
+            android:contentDescription=" Select Designation"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginLeft="9dp"
+            android:layout_marginTop="3dp"
+            android:layout_marginRight="9dp"
+            android:paddingLeft="10dp"
+            android:background="@drawable/home_pg_gradient"
+            android:spinnerMode="dialog" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="20dp"
+            android:textColorHint="#000"
+            app:boxStrokeColor="#000"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+            >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/phone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/ic_phone"
+                android:hint=" Phone Number"
+                android:inputType="number"
+                android:padding="10dp"
+                android:textColor="#000"
+                android:textColorHint="#757575"
+                android:textSize="18sp"
+                android:background="@drawable/home_pg_gradient"
+                tools:ignore="TouchTargetSizeCheck" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="260dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="20dp"
+                android:textColorHint="#000"
+                app:boxStrokeColor="#000"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                >
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/userid"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableStart="@drawable/ic_person"
+                    android:hint=" User  ID"
+                    android:padding="10dp"
+                    android:textColor="#000"
+                    android:textSize="18sp"
+                    android:background="@drawable/home_pg_gradient"
+                    tools:ignore="TouchTargetSizeCheck"
+                    android:clickable="false"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:cursorVisible="false"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/generate_id"
+                android:text="Generate ID"
+                android:background="@drawable/shadow_button_"
+                android:textColor="@color/black"
+                android:layout_marginTop="20dp"
+                android:layout_width="120dp"
+                android:layout_height="48dp" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/login_dets"
+            android:text="Login Credentials "
+            android:textSize="23sp"
+            android:textColor="#fff"
+            android:letterSpacing="0.08"
+            android:textStyle="bold"
+            android:gravity="center_horizontal"
+            android:fontFamily="sans-serif-medium"
+            android:paddingTop="2dp"
+            android:paddingBottom="2dp"
+            android:paddingLeft="10dp"
+            android:background="@color/teal_700"
+            android:layout_marginTop="35dp"
+            android:layout_width="match_parent"
+            android:layout_height="38dp"/>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            app:boxStrokeColor="#000"
+            android:textColorHint="#000"
+            android:layout_marginTop="18dp"
+            android:background="@drawable/home_pg_gradient"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+            >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/mail"
+                android:hint=" Email Address"
+                android:inputType="textEmailAddress"
+                android:padding="10dp"
+                android:textColor="#000"
+                android:textSize="18sp"
+                android:layout_marginTop="20dp"
+                tools:ignore="TouchTargetSizeCheck" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/home_pg_gradient"
+            android:textColorHint="#000"
+            app:boxStrokeColor="#000"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+            >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="  Password"
+                android:drawableStart="@drawable/ic_key"
+                android:padding="10dp"
+                android:textColor="#000"
+                android:textSize="18sp"
+                android:layout_marginTop="20dp"
+                tools:ignore="TouchTargetSizeCheck" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/save_btn"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="70dp"
+            android:letterSpacing="0.05"
+            android:text="Save"
+            android:textColor="#FFF"
+            android:textSize="19dp"
+            android:background="@drawable/shadow_button_"
+            android:textStyle="bold" />
+
+        <ProgressBar
+            android:id="@+id/progressbar"
+            android:layout_gravity="center_horizontal"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+
+
+
+
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,376 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".Discharge_Summary">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/light_bg"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:src="@drawable/bg"/>
+
+        <TextView
+            android:text="-Discharge Summary-"
+            android:textColor="#0d6e6a"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            android:fontFamily="sans-serif-medium"
+            android:letterSpacing="0.05"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="wrap_content"
+            android:shadowColor="#000"
+            android:layout_marginTop="10dp"
+            android:layout_height="wrap_content"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="19dp"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7dp"
+                android:letterSpacing="0.07"
+                android:layout_marginLeft="15dp"
+                android:text="Patient ID: "
+                android:textColor="#000"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvpid"
+                android:textSize="16sp"
+                android:textColor="@color/black"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="3dp"
+                android:layout_marginLeft="33dp"
+                android:background="@color/white"
+                android:layout_marginRight="15dp"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7dp"
+                android:letterSpacing="0.07"
+                android:layout_marginLeft="15dp"
+                android:text="Patient Name: "
+                android:textColor="#000"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_marginRight="15dp"
+                android:layout_height="40dp"
+                android:orientation="horizontal"
+                android:background="@color/white">
+                <TextView
+                    android:id="@+id/tvpfname"
+                    android:textSize="16sp"
+                    android:textColor="@color/black"
+                    android:layout_width="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:layout_height="40dp"
+                    android:layout_marginRight="15dp"
+                    />
+                <TextView
+                    android:id="@+id/tvplname"
+                    android:textSize="16sp"
+                    android:textColor="@color/black"
+                    android:layout_width="wrap_content"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginTop="3dp"
+                    android:layout_height="40dp"
+                    android:layout_marginRight="15dp"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:letterSpacing="0.07"
+            android:layout_marginLeft="15dp"
+            android:text="Confirmed Diagnosis : "
+            android:textColor="#000"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="70dp">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/et1"
+                    android:inputType="textMultiLine"
+                    android:gravity="top|start"
+                    android:scrollbars="vertical"
+                    android:background="@color/white"
+                    android:layout_width="match_parent"
+                    android:hint="Type Here"
+                    android:layout_height="70dp" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:letterSpacing="0.07"
+            android:layout_marginLeft="15dp"
+            android:text="Pre-existing medical conditions and Medications on presentation  : "
+            android:textColor="#000"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/et2"
+                android:inputType="textMultiLine"
+                android:gravity="top|start"
+                android:scrollbars="vertical"
+                android:background="@color/white"
+                android:layout_width="match_parent"
+                android:hint="Type Here"
+                android:layout_height="70dp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:letterSpacing="0.07"
+            android:layout_marginLeft="15dp"
+            android:text="Treatment given / Procedure done  : "
+            android:textColor="#000"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/et3"
+                android:inputType="textMultiLine"
+                android:gravity="top|start"
+                android:scrollbars="vertical"
+                android:background="@color/white"
+                android:layout_width="match_parent"
+                android:hint="Type Here"
+                android:layout_height="70dp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:letterSpacing="0.07"
+            android:layout_marginLeft="15dp"
+            android:text="Condition on Discharge  : "
+            android:textColor="#000"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/et4"
+                android:inputType="textMultiLine"
+                android:gravity="top|start"
+                android:scrollbars="vertical"
+                android:background="@color/white"
+                android:layout_width="match_parent"
+                android:hint="Type Here"
+                android:layout_height="70dp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:letterSpacing="0.07"
+            android:layout_marginLeft="15dp"
+            android:text="Advice on Discharge / Prescription  : "
+            android:textColor="#000"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/et5"
+                android:inputType="textMultiLine"
+                android:gravity="top|start"
+                android:scrollbars="vertical"
+                android:background="@color/white"
+                android:layout_width="match_parent"
+                android:hint="Type Here"
+                android:layout_height="70dp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:letterSpacing="0.07"
+            android:layout_marginLeft="15dp"
+            android:text="Follow up schedule  : "
+            android:textColor="#000"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/et6"
+                android:inputType="textMultiLine"
+                android:gravity="top|start"
+                android:scrollbars="vertical"
+                android:background="@color/white"
+                android:layout_width="match_parent"
+                android:hint="Type Here"
+                android:layout_height="70dp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            android:text="Attached Test Reports"
+            android:textSize="23sp"
+            android:textColor="#fff"
+            android:letterSpacing="0.08"
+            android:textStyle="bold"
+            android:fontFamily="sans-serif-medium"
+            android:gravity="center"
+            android:paddingTop="2dp"
+            android:paddingLeft="10dp"
+            android:background="@color/teal_700"
+            android:layout_marginTop="32dp"
+            android:layout_width="match_parent"
+            android:layout_height="38dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="240dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:letterSpacing="0.07"
+                android:layout_marginLeft="15dp"
+                android:text="Electrocardiogram (ECG or EKG) : "
+                android:textColor="#000"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/repo1"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                app:srcCompat="@drawable/add_repo" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="240dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:letterSpacing="0.07"
+                    android:layout_marginLeft="15dp"
+                    android:text="CT (Computerized Tomography) of the Heart / Other report  : "
+                    android:textColor="#000"
+                    android:textSize="18dp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+
+
+            <ImageView
+                android:id="@+id/repo2"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                app:srcCompat="@drawable/add_repo" />
+
+        </LinearLayout>
+
+        <!-- save button -->
+        <com.chinodev.androidneomorphframelayout.NeomorphFrameLayout
+            android:id="@+id/save_layout"
+            android:layout_width="250dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginBottom="80dp"
+            android:layout_gravity="center"
+            app:neomorph_view_type="rectangular"
+            app:neomorph_shadow_type="outer"
+            app:neomorph_elevation="10dp"
+            app:neomorph_corner_radius="10dp"
+            app:neomorph_background_color="@color/teal_200"
+            app:neomorph_shadow_color="@color/teal_700"
+            app:neomorph_highlight_color="#BFF5FB">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnsave"
+                android:layout_width="200dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="35dp"
+                android:background="@color/teal_200"
+                android:letterSpacing="0.12"
+                android:text="SAVE "
+                android:textColor="#000"
+                android:textSize="19dp"
+                android:textStyle="bold" />
+
+        </com.chinodev.androidneomorphframelayout.NeomorphFrameLayout>
+
+
+    </LinearLayout>
+</ScrollView>

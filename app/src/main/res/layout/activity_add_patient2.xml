@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/light_bg"
+    tools:context=".add_patient2">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:src="@drawable/bg"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="8dp"
+        android:layout_gravity="center"
+        android:orientation="horizontal">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/step1"
+            android:layout_width="140dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/step_btn_design"
+            android:letterSpacing="0.09"
+            android:text="STEP 1 "
+            android:textColor="#000"
+            android:textSize="14dp" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/step2"
+            android:layout_width="140dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/step_btn_design"
+            android:letterSpacing="0.09"
+            android:text="STEP 2 "
+            android:textColor="#000"
+            android:textSize="14dp"
+            />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/step3"
+            android:layout_width="130dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/step_btn_design"
+            android:letterSpacing="0.09"
+            android:text="STEP 3 "
+            android:textColor="#000"
+            android:textSize="14dp"
+            />
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+
+            <!-- emergency contact info -->
+            <TextView
+                android:text="Emergency Contact Information"
+                android:textColor="#0d6e6a"
+                android:textSize="25dp"
+                android:textStyle="bold"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <!-- contact Name -->
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="29dp"
+                android:layout_marginRight="10dp"
+                android:background="@color/teal_200"
+                android:fontFamily="sans-serif-light"
+                android:paddingTop="2dp"
+                android:paddingBottom="2dp"
+                android:text=" Enter Full Name "
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="5dp"
+                android:textColorHint="@color/black"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/et_family_name"
+                    android:hint=" Contact Name"
+                    android:drawableStart="@drawable/ic_pencil"
+                    android:padding="10dp"
+                    android:inputType="textPersonName"
+                    android:textColor="#000"
+                    android:textSize="18sp"
+                    android:textColorHint="#000"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!-- emergency Phone -->
+            <TextView
+                android:text=" Enter Emergency Phone Number"
+                android:textSize="20sp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:fontFamily="sans-serif-light"
+                android:paddingTop="2dp"
+                android:paddingBottom="2dp"
+                android:background="@color/teal_200"
+                android:layout_marginTop="25dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"/>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dp"
+                android:textColorHint="@color/black"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/et_family_phone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:drawableStart="@drawable/ic_phone"
+                    android:hint=" Phone"
+                    android:inputType="number"
+                    android:minHeight="48dp"
+                    android:padding="10dp"
+                    android:textColor="#000"
+                    android:textColorHint="#000"
+                    android:textSize="18sp" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!-- Relationship To Patient -->
+            <TextView
+                android:text="Relationship to patient"
+                android:textSize="20sp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:fontFamily="sans-serif-light"
+                android:paddingTop="2dp"
+                android:paddingBottom="2dp"
+                android:background="@color/teal_200"
+                android:layout_marginTop="25dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"/>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dp"
+                android:textColorHint="@color/black"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/et_relationship"
+                    android:hint=" Eg: Father"
+                    android:drawableStart="@drawable/ic_pencil"
+                    android:padding="10dp"
+                    android:inputType="text"
+                    android:textColor="#000"
+                    android:textSize="18sp"
+                    android:textColorHint="#000"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!-- save button -->
+            <com.chinodev.androidneomorphframelayout.NeomorphFrameLayout
+                android:id="@+id/save_layout"
+                android:layout_width="250dp"
+                android:layout_height="100dp"
+                android:layout_marginTop="25dp"
+                android:layout_marginBottom="25dp"
+                android:layout_gravity="center"
+                app:neomorph_view_type="rectangular"
+                app:neomorph_shadow_type="outer"
+                app:neomorph_elevation="10dp"
+                app:neomorph_corner_radius="10dp"
+                app:neomorph_background_color="@color/teal_200"
+                app:neomorph_shadow_color="@color/teal_700"
+                app:neomorph_highlight_color="#CAF7FC">
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/save_btn2"
+                    android:layout_width="200dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="35dp"
+                    android:background="@color/teal_200"
+                    android:letterSpacing="0.12"
+                    android:text="SAVE "
+                    android:textColor="#000"
+                    android:textSize="19dp"
+                    android:textStyle="bold" />
+
+            </com.chinodev.androidneomorphframelayout.NeomorphFrameLayout>
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+</LinearLayout>

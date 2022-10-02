@@ -1,0 +1,441 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".add_dr">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/white">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:src="@drawable/bg"/>
+
+        <TextView
+            android:text="Nurse Registration Form"
+            android:textColor="#0d6e6a"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            android:fontFamily="sans-serif-medium"
+            android:letterSpacing="0.05"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="wrap_content"
+            android:shadowColor="#000"
+            android:layout_height="wrap_content"/>
+
+        <!-- Personal Detailes -->
+        <TextView
+            android:id="@+id/per_det"
+            android:text="PART A: Personal Detailes "
+            android:textSize="23sp"
+            android:textColor="#fff"
+            android:letterSpacing="0.08"
+            android:textStyle="bold"
+            android:gravity="left"
+            android:fontFamily="sans-serif-medium"
+            android:paddingTop="2dp"
+            android:paddingLeft="10dp"
+            android:background="@color/teal_700"
+            android:layout_marginTop="29dp"
+            android:layout_width="match_parent"
+            android:layout_height="38dp"/>
+
+        <!-- profile pic -->
+        <LinearLayout
+            android:id="@+id/img_profile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/profilepic"
+                android:tooltipText="Select Image"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:background="@color/teal_700"
+                app:srcCompat="@drawable/nurseprofile" />
+
+        </LinearLayout>
+
+
+
+        <!-- First Name -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="17dp"
+            android:textColorHint="#000"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+            >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/fname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/ic_pencil"
+                android:hint=" Enter First Name"
+                android:inputType="text"
+                android:padding="10dp"
+                android:textColor="#000"
+                android:textColorHint="#000"
+                android:textSize="18sp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/home_pg_gradient"
+                tools:ignore="TouchTargetSizeCheck" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- Last Name -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="17dp"
+            android:textColorHint="#000"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+            >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/lname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/ic_pencil"
+                android:hint=" Enter Last Name"
+                android:inputType="text"
+                android:padding="10dp"
+                android:textColor="#000"
+                android:textColorHint="#000"
+                android:textSize="18sp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/home_pg_gradient"
+                tools:ignore="TouchTargetSizeCheck" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- DOB text view-->
+        <TextView
+            android:id="@+id/tvDate"
+            android:layout_marginTop="19dp"
+            android:letterSpacing="0.07"
+            android:paddingLeft="27dp"
+            android:text=" Date of Birth (dd/mm/yyyy)"
+            android:drawableStart="@drawable/ic_calendar"
+            android:textColor="#0d6e6a"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <!-- edit text Date -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="4dp"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+            android:textColorHint="#000">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etDate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:hint=" Enter the Date of Birth"
+                android:inputType="date"
+                android:minHeight="48dp"
+                android:padding="10dp"
+                android:textColor="#000"
+                android:textColorHint="#000"
+                android:background="@drawable/home_pg_gradient"
+                android:textSize="18sp"
+                android:focusable="false"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- select gender -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="19dp"
+            android:letterSpacing="0.07"
+            android:paddingLeft="32dp"
+            android:text="Select Gender"
+            android:textColor="#0d6e6a"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+
+        <RadioGroup
+            android:id="@+id/radio_gp"
+            android:layout_width="300dp"
+            android:layout_height="120dp"
+            android:layout_marginLeft="25dp">
+
+            <RadioButton
+                android:id="@+id/radioButton"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:text="Female"
+                android:textSize="18sp"
+                tools:ignore="TouchTargetSizeCheck" />
+
+            <RadioButton
+                android:id="@+id/radioButton2"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_marginTop="10dp"
+                android:text="Male"
+                android:textSize="18sp"
+                tools:ignore="TouchTargetSizeCheck" />
+
+        </RadioGroup>
+
+        <!-- contact number -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="9dp"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+            android:textColorHint="#000">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/phone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:drawableStart="@drawable/ic_phone"
+                android:hint=" Contact Number"
+                android:inputType="number"
+                android:minHeight="48dp"
+                android:padding="10dp"
+                android:textColor="#000"
+                android:textColorHint="#000"
+                android:background="@drawable/home_pg_gradient"
+                android:textSize="18sp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- Address -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="11dp"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+            android:textColorHint="#000">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/ic_location"
+                android:hint=" Address"
+                android:inputType="text"
+                android:padding="10dp"
+                android:textColor="#000"
+                android:textColorHint="#000"
+                android:textSize="18sp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/home_pg_gradient"
+                tools:ignore="TouchTargetSizeCheck" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- Duty shift -->
+        <TextView
+            android:id="@+id/duty_shift"
+            android:text="PART B: Duty Shift"
+            android:textSize="23sp"
+            android:textColor="#fff"
+            android:letterSpacing="0.08"
+            android:textStyle="bold"
+            android:gravity="left"
+            android:fontFamily="sans-serif-medium"
+            android:paddingTop="2dp"
+            android:paddingLeft="10dp"
+            android:background="@color/teal_700"
+            android:layout_marginTop="32dp"
+            android:layout_width="match_parent"
+            android:layout_height="38dp"/>
+
+        <!-- Duty Shift category-->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="19dp"
+            android:letterSpacing="0.07"
+            android:layout_marginLeft="24dp"
+            android:layout_marginRight="15dp"
+            android:text=" Nursing Duty"
+            android:textColor="#000"
+            android:textSize="18sp"
+            android:textStyle="normal"
+            android:drawableStart="@drawable/ic_person"/>
+
+
+        <Spinner
+            android:id="@+id/spinner"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginLeft="9dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="9dp"
+            android:paddingLeft="10dp"
+            android:popupBackground="@drawable/home_pg_gradient"
+            android:spinnerMode="dialog"
+            app:boxStrokeColor="#000"
+            app:hintTextAppearance="@color/teal_700"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <!-- User ID -->
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="260dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="20dp"
+                android:textColorHint="#000"
+                app:boxStrokeColor="#000"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                >
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/userid"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableStart="@drawable/ic_person"
+                    android:hint=" User  ID"
+                    android:padding="10dp"
+                    android:textColor="#000"
+                    android:textSize="18sp"
+                    android:background="@drawable/home_pg_gradient"
+                    tools:ignore="TouchTargetSizeCheck"
+                    android:clickable="false"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:cursorVisible="false"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/generate_id"
+                android:text="Generate ID"
+                android:background="@drawable/shadow_button_"
+                android:textColor="@color/black"
+                android:layout_marginTop="20dp"
+                android:layout_width="120dp"
+                android:layout_height="48dp" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/login_dets"
+            android:text="Login Credentials "
+            android:textSize="23sp"
+            android:textColor="#fff"
+            android:letterSpacing="0.08"
+            android:textStyle="bold"
+            android:gravity="center_horizontal"
+            android:fontFamily="sans-serif-medium"
+            android:paddingTop="2dp"
+            android:paddingBottom="2dp"
+            android:paddingLeft="10dp"
+            android:background="@color/teal_700"
+            android:layout_marginTop="35dp"
+            android:layout_width="match_parent"
+            android:layout_height="38dp"/>
+
+        <!-- UserName -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/home_pg_gradient"
+            android:layout_marginTop="18dp"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+            android:textColorHint="#000">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/email_add"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/ic_usericon"
+                android:hint=" Email Address"
+                android:inputType="textEmailAddress"
+                android:padding="10dp"
+                android:textColor="#000"
+                android:textColorHint="#000"
+                android:textSize="18sp"
+                android:layout_marginTop="20dp"
+                tools:ignore="TouchTargetSizeCheck" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- Password -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/home_pg_gradient"
+            android:layout_marginTop="12dp"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+            android:textColorHint="#000">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/password_add"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableStart="@drawable/ic_key"
+                android:hint=" Password"
+                android:inputType="text"
+                android:padding="10dp"
+                android:textColor="#000"
+                android:textColorHint="#000"
+                android:textSize="18sp"
+                android:layout_marginTop="20dp"
+                tools:ignore="TouchTargetSizeCheck" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- Add button -->
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/save_btn"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="50dp"
+            android:background="@drawable/shadow_button_"
+            android:letterSpacing="0.05"
+            android:text="Save"
+            android:textColor="#fff"
+            android:textSize="19dp"
+            android:textStyle="bold" />
+
+        <ProgressBar
+            android:id="@+id/progressbar"
+            android:layout_gravity="center_horizontal"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:elevation="12dp"
+            android:layout_height="wrap_content"/>
+
+
+
+
+    </LinearLayout>
+</ScrollView>

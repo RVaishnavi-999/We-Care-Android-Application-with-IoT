@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AdminLogin"
+    android:orientation="vertical"
+    android:background="@drawable/trending_background3">
+
+    <ImageView
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:src="@drawable/receptionist"
+        android:transitionName="SplashImage"
+        android:layout_marginTop="80dp"
+        android:layout_gravity="center_horizontal"
+        android:contentDescription="@string/todo"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:fontFamily="sans-serif-medium"
+        android:transitionName="SplashText"
+        android:text="@string/welcome_back"
+        android:textColor="@color/black"
+        android:textSize="20sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:fontFamily="sans-serif"
+        android:transitionName="SplashText"
+        android:text="@string/sign_in_to_continue"
+        android:textColor="@color/black"
+        android:textSize="14sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="30dp"
+        >
+
+        <EditText
+            android:id="@+id/emailid"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:background="@color/white"
+            android:drawablePadding="16dp"
+            android:hint="@string/e_mail"
+            android:imeOptions="actionNext"
+            android:inputType="textEmailAddress"
+            android:padding="16dp"
+            android:textSize="14sp"
+            android:autofillHints="emailAddress" />
+
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:background="@color/white"
+            android:drawablePadding="16dp"
+            android:hint="@string/password"
+            android:imeOptions="actionDone"
+            android:inputType="textPassword"
+            android:padding="16dp"
+            android:textSize="14sp"
+            android:autofillHints="password" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginBottom="20dp">
+
+            <Button
+                android:id="@+id/login"
+                android:layout_width="300dp"
+                android:layout_marginLeft="30dp"
+                android:gravity="center"
+                android:layout_height="wrap_content"
+                android:background="@drawable/loginbtn1"
+                android:text="@string/login"
+                android:textColor="@color/white" />
+
+            <ProgressBar
+                android:id="@+id/progressBar20"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_forgotPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="200dp"
+        android:alpha="1"
+        android:text="@string/forgot_password"
+        android:textColor="@color/teal_700"
+        android:textSize="13sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+
+
+</LinearLayout>

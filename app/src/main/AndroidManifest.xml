@@ -1,0 +1,625 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.projectwecare">
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:targetApi="31">
+
+
+        <activity
+            android:name=".PatientIotView"
+            android:exported="true"
+            android:parentActivityName=".MainActivity2Nurse">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".attendpatientview"
+            android:exported="true"
+            android:parentActivityName=".adminMain" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".attendnurse"
+            android:exported="true"
+            android:parentActivityName=".adminMain" >
+        <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
+
+            <category android:name="android.intent.category.DEFAULT" />
+        </intent-filter>
+        </activity>
+        <activity
+            android:name=".attenddoctor"
+            android:exported="true"
+            android:parentActivityName=".adminMain">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".AdminEditProfile"
+            android:exported="true"
+            android:parentActivityName=".adminMain">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".chatDR"
+            android:exported="true"
+            android:parentActivityName=".C_DrPatientsList">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".chat_jnr_dr"
+            android:exported="true"
+            android:parentActivityName=".GenPhy_DrHomepg">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".UserActivity2"
+            android:exported="false"
+            android:parentActivityName=".C_DrPatientsList" />
+        <activity
+            android:name=".UserActivity1"
+            android:exported="false"
+            android:parentActivityName=".GenPhy_DrHomepg" />
+        <activity
+            android:name=".shiftdateshow"
+            android:exported="true"
+            android:parentActivityName=".adminMain">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".editnurseshift"
+            android:exported="true"
+            android:parentActivityName=".adminMain">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ManualAttendance"
+            android:exported="true"
+            android:parentActivityName=".adminMain">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Nursevieweditshift"
+            android:exported="true"
+            android:parentActivityName=".adminMain">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".viewShiftadd"
+            android:exported="true"
+            android:parentActivityName=".adminMain">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".patientbillView"
+            android:exported="true"
+            android:parentActivityName=".adminMain">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".bill_generate"
+            android:exported="true"
+            android:parentActivityName=".adminMain">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".AddShift"
+            android:exported="true"
+            android:parentActivityName=".adminMain"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ViewNurseaddShift"
+            android:exported="true"
+            android:parentActivityName=".adminMain"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".capture"
+            android:screenOrientation="fullSensor"
+            android:stateNotNeeded="true"
+            android:theme="@style/zxing_CaptureTheme" />
+        <activity
+            android:name=".Barattendance"
+            android:exported="true"
+            android:parentActivityName=".adminMain"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".forgetpassword"
+            android:exported="true"
+            android:parentActivityName=".AdminLogin"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".adminMain"
+            android:exported="true"
+            android:parentActivityName=".Home_Activity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".AdminLogin"
+            android:exported="true"
+            android:parentActivityName=".Home_Activity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Home_Activity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity> <!-- Dr login -->
+        <activity
+            android:name=".DoctorLogin"
+            android:exported="true"
+            android:parentActivityName=".Home_Activity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity> <!-- ForgotPWD dr -->
+        <activity
+            android:name=".ForgotPWD"
+            android:exported="true"
+            android:parentActivityName=".Home_Activity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity> <!-- C_DrPatientsList -->
+        <activity
+            android:name=".C_DrPatientsList"
+            android:exported="true"
+            android:parentActivityName=".Home_Activity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity> <!-- Discharge summary -->
+        <activity
+            android:name=".Discharge_Summary"
+            android:exported="true"
+            android:parentActivityName=".Home_Activity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity> <!-- C_DrEditProfile -->
+        <activity
+            android:name=".C_DrEditProfile"
+            android:exported="true"
+            android:parentActivityName=".Home_Activity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity> <!-- C_DrContactAdmin -->
+        <activity
+            android:name=".C_DrContactAdmin"
+            android:exported="true"
+            android:parentActivityName=".Home_Activity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity> <!-- UpdateEmailActivity -->
+        <activity
+            android:name=".UpdateEmailActivity"
+            android:exported="true"
+            android:parentActivityName=".Home_Activity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity> <!-- GenPhy_DrHomepg -->
+        <activity
+            android:name=".GenPhy_DrHomepg"
+            android:exported="true"
+            android:parentActivityName=".Home_Activity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity> <!-- ContactAdmin2 -->
+        <activity
+            android:name=".ContactAdmin2"
+            android:exported="true"
+            android:parentActivityName=".Home_Activity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity> <!-- ForgotPWD_2 -->
+        <activity
+            android:name=".ForgotPWD_2"
+            android:exported="true"
+            android:parentActivityName=".Home_Activity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity> <!-- EditProfile2 -->
+        <activity
+            android:name=".EditProfile2"
+            android:exported="true"
+            android:parentActivityName=".Home_Activity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity> <!-- UpdateEmailActivity2 -->
+        <activity
+            android:name=".UpdateEmailActivity2"
+            android:exported="true"
+            android:parentActivityName=".Home_Activity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity> <!-- NurseLogin -->
+        <activity
+            android:name=".NurseLogin"
+            android:exported="true"
+            android:parentActivityName=".Home_Activity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity> <!-- ForgotPWDNurse -->
+        <activity
+            android:name=".ForgotPWDNurse"
+            android:exported="true"
+            android:parentActivityName=".Home_Activity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity> <!-- patient login -->
+        <activity
+            android:name=".PatientLogin"
+            android:exported="true"
+            android:parentActivityName=".Home_Activity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity> <!-- admin_home_pg -->
+        <!-- popup window  Doctor -->
+        <activity
+            android:name=".popup_window_dr"
+            android:exported="true"
+            android:parentActivityName=".adminMain">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity> <!-- popup_window_nurse -->
+        <activity
+            android:name=".popup_window_nurse"
+            android:exported="true"
+            android:parentActivityName=".adminMain">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity> <!-- popup window  patient -->
+        <activity
+            android:name=".popup_window_patient"
+            android:exported="true"
+            android:parentActivityName=".adminMain">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity> <!-- Doctor Adding pg -->
+        <activity
+            android:name=".add_dr"
+            android:exported="true"
+            android:parentActivityName=".adminMain">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity> <!-- Doctor Viewing pg -->
+        <activity
+            android:name=".view_dr"
+            android:exported="true"
+            android:parentActivityName=".adminMain">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity> <!-- Nurse Adding pg -->
+        <activity
+            android:name=".add_nurse"
+            android:exported="true"
+            android:parentActivityName=".adminMain">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity> <!-- Nurse View pg -->
+        <activity
+            android:name=".view_nurse"
+            android:exported="true"
+            android:parentActivityName=".adminMain">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity> <!-- Patient Adding pg -->
+        <!-- 1 -->
+        <activity
+            android:name=".add_patient1"
+            android:exported="true"
+            android:parentActivityName=".adminMain">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity> <!-- 2 -->
+        <activity
+            android:name=".add_patient2"
+            android:exported="true"
+            android:parentActivityName=".adminMain">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity> <!-- 3 -->
+        <activity
+            android:name=".add_patient3"
+            android:exported="true"
+            android:parentActivityName=".adminMain">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity> <!-- PatientViewing pg -->
+        <activity
+            android:name=".view_patient"
+            android:exported="true"
+            android:parentActivityName=".adminMain">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity> <!-- Patient Editing pg -->
+        <activity
+            android:name=".edit_patient"
+            android:exported="true"
+            android:parentActivityName=".adminMain">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity> <!-- Nurse home pg -->
+        <!-- Patient home pg -->
+        <activity
+            android:name=".Patient_home_pg"
+            android:exported="true"
+            android:parentActivityName=".PatientLogin">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".verify_otp"
+            android:exported="true"
+            android:parentActivityName=".Home_Activity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".EditProfile"
+            android:exported="true"
+            android:parentActivityName=".MainActivity2Nurse">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity3Nurse"
+            android:exported="true"
+            android:parentActivityName=".MainActivity2Nurse">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity2Nurse"
+            android:exported="true"
+            android:parentActivityName=".Home_Activity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ChatActivity"
+            android:exported="true"
+            android:parentActivityName=".MainActivity2Nurse"
+            android:windowSoftInputMode="adjustResize">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".UserActivity"
+            android:exported="true"
+            android:parentActivityName=".MainActivity2Nurse">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivityNurse"
+            android:exported="true"
+            android:parentActivityName=".MainActivity2Nurse">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <service
+            android:name=".MessagingService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+    </application>
+
+</manifest>

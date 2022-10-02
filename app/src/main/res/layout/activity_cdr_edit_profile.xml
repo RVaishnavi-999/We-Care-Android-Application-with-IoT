@@ -1,0 +1,344 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/drawer_layout"
+    tools:context=".C_DrEditProfile">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+        <include
+            layout="@layout/main_toolbar"/>
+
+        <ScrollView
+            android:id="@+id/sv1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:ignore="SpeakableTextPresentCheck">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:padding="15dp"
+                android:background="@drawable/light_bg"
+                >
+
+                <TextView
+                    android:id="@+id/heading"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-medium"
+                    android:letterSpacing="0.05"
+                    android:text="You can update your profile details now !"
+                    android:textAlignment="center"
+                    android:textColor="#0d6e6a"
+                    android:textSize="17dp"
+                    android:textStyle="bold" />
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/profilepic2"
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"
+                    android:layout_below="@+id/heading"
+                    android:layout_centerInParent="true"
+                    android:layout_marginTop="15dp"
+                    android:gravity="center_vertical"
+                    android:visibility="invisible"
+                    android:src="@drawable/best_dr" />
+
+
+
+
+                <TextView
+                    android:id="@+id/tv_update_fullname"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/profilepic2"
+                    android:layout_marginTop="3dp"
+                    android:padding="6dp"
+                    android:text="Full Name"
+                    android:textColor="#555555"
+                    android:textSize="18sp" />
+
+
+
+                <EditText
+                    android:id="@+id/et_update_fullname"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:layout_below="@+id/tv_update_fullname"
+                    android:layout_marginTop="-1dp"
+                    android:background="@drawable/border"
+                    android:drawableStart="@drawable/ic_pencil"
+                    android:hint=" Enter Full Name"
+                    android:inputType="textPersonName"
+                    android:padding="6dp"
+                    android:textSize="18sp" />
+
+                <!-- Speciality -->
+                <TextView
+                    android:id="@+id/tv_update_speciality"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/et_update_fullname"
+                    android:layout_marginTop="10dp"
+                    android:padding="6dp"
+                    android:text="Speciality"
+                    android:textColor="#555555"
+                    android:textSize="18sp" />
+
+
+                <EditText
+                    android:id="@+id/et_update_speciality"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:layout_below="@+id/tv_update_speciality"
+                    android:background="@drawable/border"
+                    android:drawableStart="@drawable/ic_spl"
+                    android:focusable="false"
+                    android:hint=" To change this contact admin"
+                    android:inputType="none"
+                    android:padding="6dp"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/tv_update_serviceyears"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/et_update_speciality"
+                    android:layout_marginTop="10dp"
+                    android:padding="6dp"
+                    android:text="Service Years"
+                    android:textColor="#555555"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/et_update_serviceyears"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:layout_below="@+id/tv_update_serviceyears"
+                    android:background="@drawable/border"
+                    android:drawableStart="@drawable/ic_year"
+                    android:hint=" Hint: 6"
+                    android:inputType="number"
+                    android:padding="6dp"
+                    android:textSize="18sp" />
+
+                <!--designation -->
+                <TextView
+                    android:id="@+id/tv_update_desig"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/et_update_serviceyears"
+                    android:layout_marginTop="10dp"
+                    android:padding="6dp"
+                    android:text=" Designation"
+                    android:textColor="#555555"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/et_update_desig"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:layout_below="@+id/tv_update_desig"
+                    android:layout_marginTop="-1dp"
+                    android:background="@drawable/border"
+                    android:drawableStart="@drawable/ic_person"
+                    android:focusable="false"
+                    android:hint=" To change designation contact admin"
+                    android:inputType="none"
+                    android:padding="6dp"
+                    android:textSize="16sp" />
+
+                <!-- con num -->
+                <TextView
+                    android:id="@+id/tv_update_contactnumber"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/et_update_desig"
+                    android:layout_marginTop="10dp"
+                    android:padding="6dp"
+                    android:text="Contact Number"
+                    android:textColor="#555555"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/et_update_contactnumber"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:layout_below="@+id/tv_update_contactnumber"
+                    android:background="@drawable/border"
+                    android:drawableStart="@drawable/ic_phone"
+                    android:hint=" Enter your mobile number (without +91)"
+                    android:inputType="phone"
+                    android:padding="6dp"
+                    android:textSize="16sp" />
+
+                <!--User id -->
+                <TextView
+                    android:id="@+id/tv_update_userid"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/et_update_contactnumber"
+                    android:layout_marginTop="10dp"
+                    android:padding="6dp"
+                    android:text=" User ID"
+                    android:textColor="#555555"
+                    android:textSize="18sp" />
+
+                <EditText
+                    android:id="@+id/et_update_uid"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:layout_below="@+id/tv_update_userid"
+                    android:background="@drawable/border"
+                    android:drawableStart="@drawable/ic_usericon"
+                    android:focusable="false"
+                    android:hint=" To change UserID contact admin"
+                    android:inputType="none"
+                    android:padding="6dp"
+                    android:textSize="16sp" />
+
+                <ImageView
+                    android:id="@+id/imageBar"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_below="@+id/et_update_uid"
+                    android:layout_marginLeft="100dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="20dp"
+                    android:adjustViewBounds="true"
+                    android:scaleType="fitCenter" />
+
+                <!--show email  -->
+                <TextView
+                    android:id="@+id/tvupdateemail_heading"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/imageBar"
+                    android:layout_marginTop="10dp"
+                    android:padding="6dp"
+                    android:text=" Email ID"
+                    android:textColor="#555555"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/tv_show_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:layout_below="@+id/tvupdateemail_heading"
+                    android:background="@drawable/border"
+                    android:drawableStart="@drawable/mail"
+                    android:paddingStart="5dp"
+                    android:textSize="18sp" />
+
+                <!-- Update email button -->
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/update_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_show_email"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/teal_200"
+                    android:letterSpacing="0.05"
+                    android:text="Update Email"
+                    android:textColor="#000"
+                    android:textSize="19dp"
+                    android:textStyle="bold" />
+
+                <!-- invisible -->
+                <TextView
+                    android:id="@+id/tv_update_pwd"
+                    android:layout_width="match_parent"
+                    android:layout_height="5dp"
+                    android:layout_below="@+id/update_email"
+                    android:padding="6dp"
+                    android:text=" Password"
+                    android:textColor="#555555"
+                    android:textSize="18sp"
+                    android:visibility="invisible" />
+
+
+                <EditText
+                    android:id="@+id/et_update_pwd"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:layout_below="@+id/tv_update_pwd"
+                    android:background="@drawable/border"
+                    android:drawableStart="@drawable/ic_key"
+                    android:focusable="false"
+                    android:hint=" Password"
+                    android:inputType="none"
+                    android:padding="6dp"
+                    android:textSize="16sp"
+                    android:visibility="invisible" />
+
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/change_pwd_btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="15dp"
+                    android:layout_below="@+id/et_update_pwd"
+                    android:background="@color/teal_200"
+                    android:letterSpacing="0.05"
+                    android:text="Change Password"
+                    android:textColor="#000"
+                    android:textSize="19dp"
+                    android:textStyle="bold"
+                    android:visibility="invisible" />
+
+
+
+
+                <!-- Update profile button -->
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/updateprofile_btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/change_pwd_btn"
+                    android:background="@color/teal_200"
+                    android:letterSpacing="0.05"
+                    android:text="Update Profile"
+                    android:textColor="#000"
+                    android:textSize="19dp"
+                    android:textStyle="bold" />
+
+                <ProgressBar
+                    android:id="@+id/progressbar"
+                    style="?android:attr/progressBarStyleLarge"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:elevation="10dp"
+                    android:visibility="gone"/>
+
+
+
+            </RelativeLayout>
+
+        </ScrollView>
+
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:layout_width="350dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:background="@color/white"
+        tools:ignore="MissingConstraints">
+
+        <include layout="@layout/main_nav_drawer" />
+
+    </RelativeLayout>
+
+</androidx.drawerlayout.widget.DrawerLayout>
